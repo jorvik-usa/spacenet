@@ -25,7 +25,7 @@ interp_layers = [k for k in solver.net.params.keys() if 'up' in k]
 surgery.interp(solver.net, interp_layers)
 
 # scoring
-val = np.loadtxt('/home/jhowe/Denver_Oct16/spacenet/processedData/ImageSets/Segmentation/val.txt', dtype=str)
+val = np.loadtxt('/spacenet/processedData/ImageSets/Segmentation/val.txt', dtype=str)
 
 for _ in range(25):
     solver.step(4000)
